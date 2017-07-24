@@ -28,9 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
-            android:padding="5dp">
-
-
+            >
 
 
             <TextView
@@ -39,23 +37,19 @@
                 android:layout_height="wrap_content"
                 android:text="Email Address :"
                 android:textColor="@color/white"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:textStyle="normal"
                 />
-
-
 
             <EditText
                 android:id="@+id/edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/text"
                 android:layout_below="@id/text"
                 android:background="#00000000"
-                android:lines="1"
+                android:inputType="text|textEmailAddress"
                 android:textColor="@color/white"
                 />
-
 
             <View
                 android:id="@+id/view1"
@@ -65,8 +59,6 @@
                 android:layout_alignStart="@+id/edit"
                 android:layout_below="@+id/edit"
                 android:background="@color/white"
-
-
                 />
 
 
@@ -76,38 +68,36 @@
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_below="@+id/view1"
                 android:text="Password :"
                 android:textColor="@color/white"
-                android:textSize="16dp"
-                android:textStyle="normal" />
-
+                android:textSize="16sp"
+                android:textStyle="normal"
+                />
 
             <EditText
                 android:id="@+id/edit1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/text1"
-                android:lines="1"
-                android:layout_alignStart="@+id/text1"
                 android:layout_below="@+id/text1"
                 android:background="#00000000"
-                android:textColor="@color/white" />
-
-
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                />
 
             <View
                 android:id="@+id/view2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignEnd="@+id/edit1"
                 android:layout_alignStart="@+id/edit1"
                 android:layout_below="@+id/edit1"
                 android:background="@color/white"
-
-
                 />
+
+
+
 
 
             <TextView
@@ -115,54 +105,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true"
                 android:layout_marginBottom="10dp"
-                android:layout_marginStart="100dp"
                 android:layout_marginTop="30dp"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
                 android:text="Forget Password ?"
                 android:textColor="@color/white"
-                android:textSize="10dp"
+                android:textSize="12sp"
                 android:textStyle="normal"
-
                 />
-
 
             <android.support.v7.widget.CardView
                 android:id="@+id/login_cardView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/forget"
-                android:layout_alignStart="@+id/forget"
                 android:layout_below="@+id/forget"
+                android:layout_centerHorizontal="true"
                 android:layout_marginBottom="20dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="2dp"
                 app:cardElevation="10dp">
 
-
-
                 <TextView
                     android:id="@+id/login"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginStart="5dp"
-                    android:gravity="center"
                     android:paddingBottom="5dp"
-                    android:paddingEnd="10dp"
-                    android:paddingStart="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
                     android:paddingTop="5dp"
-                    android:text="LOGIN"
-                    android:textColor="@color/grey">
-
-
-
-                </TextView>
+                    android:textAllCaps="true"
+                    android:text="login"
+                    android:textColor="@color/grey"
+                    />
 
             </android.support.v7.widget.CardView>
+
+
+
+
 
 
             <View
@@ -172,9 +152,7 @@
                 android:background="@color/white"
                 android:layout_alignStart="@+id/login_cardView"
                 android:layout_below="@+id/login_cardView"
-
                 />
-
 
             <TextView
                 android:id="@+id/oreo"
@@ -185,9 +163,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_alignTop="@+id/or"
                 android:layout_below="@+id/login_cardView"
-                android:layout_height="wrap_content" />
-
-
+                android:layout_height="wrap_content"
+                />
 
             <View
                 android:id="@+id/orside"
@@ -198,30 +175,29 @@
                 android:layout_alignStart="@+id/oreo"
                 android:layout_marginStart="20dp"
                 android:layout_below="@+id/login_cardView"
-
                 />
+
+
+
 
             <ImageView
                 android:id="@+id/gmail"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:layout_below="@id/login_cardView"
+                android:layout_below="@id/orside"
                 android:background="@drawable/googleee"
-                android:layout_marginStart="10dp"
-                android:layout_alignStart="@+id/login_cardView"
                 />
 
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_below="@id/login_cardView"
+                android:layout_below="@id/orside"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/fffff"
-                android:layout_marginEnd="10dp"
                 android:layout_toEndOf="@+id/gmail"
-                android:layout_alignTop="@+id/gmail"
-                android:layout_alignBottom="@+id/gmail"
 
                 />
 
