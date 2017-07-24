@@ -23,28 +23,34 @@
 
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
+            android:text="Email Address :"
+
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="60dp"
+            android:textStyle="normal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             >
-
-
-            <TextView
-                android:id="@+id/text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Email Address :"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="normal"
-                />
 
             <EditText
                 android:id="@+id/edit"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/text"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:background="#00000000"
                 android:inputType="text|textEmailAddress"
                 android:textColor="@color/white"
@@ -52,7 +58,7 @@
 
             <View
                 android:id="@+id/view1"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:layout_alignEnd="@+id/edit"
                 android:layout_alignStart="@+id/edit"
@@ -60,28 +66,38 @@
                 android:background="@color/white"
                 />
 
+        </RelativeLayout>
 
 
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Password :"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            />
 
-            <TextView
-                android:id="@+id/text1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_below="@+id/view1"
-                android:text="Password :"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="normal"
-                />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            >
 
             <EditText
                 android:id="@+id/edit1"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/text1"
                 android:background="#00000000"
                 android:inputType="textPassword"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:textColor="@color/white"
                 />
 
@@ -96,125 +112,120 @@
                 />
 
 
+        </RelativeLayout>
 
 
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+            android:text="Forget Password ?"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            />
+
+
+
+
+        <android.support.v7.widget.CardView
+
+            android:id="@+id/login_cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="10dp"
+            >
 
             <TextView
-                android:id="@+id/forget"
+                android:id="@+id/login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/view2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:text="Forget Password ?"
+                android:paddingBottom="5dp"
+                android:paddingEnd="25dp"
+                android:paddingStart="25dp"
+                android:paddingTop="5dp"
+                android:textAllCaps="true"
+                android:text="login"
+                android:textColor="@color/grey"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="7dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:layout_marginStart="8dp"
                 android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="normal"
+                />
+
+            <View
+                android:id="@+id/or"
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:layout_marginStart="10dp"
                 />
 
 
+        </LinearLayout>
 
 
-            <android.support.v7.widget.CardView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
 
-                android:id="@+id/login_cardView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/forget"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="20dp"
+           >
+
+
+
+            <ImageView
+                android:id="@+id/gmail"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_marginTop="20dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="2dp"
-                app:cardElevation="10dp"
-                >
-
-                <TextView
-                    android:id="@+id/login"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="5dp"
-                    android:paddingEnd="25dp"
-                    android:paddingStart="25dp"
-                    android:paddingTop="5dp"
-                    android:textAllCaps="true"
-                    android:text="login"
-                    android:textColor="@color/grey"
-                    />
-
-            </android.support.v7.widget.CardView>
+                android:background="@drawable/googleee"
+                />
 
 
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/login_cardView"
-                android:layout_centerHorizontal="true"
-                >
-
-                <View
-                    android:layout_width="30dp"
-                    android:layout_height="1dp"
-                    android:background="@color/white"
-                    android:layout_marginTop="7dp"
-
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="or"
-                    android:layout_marginStart="8dp"
-                    android:textColor="@color/white"
-                    />
-
-                <View
-                    android:id="@+id/or"
-                    android:layout_width="30dp"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="7dp"
-                    android:background="@color/white"
-                    android:layout_marginStart="10dp"
-                    />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fffff"
 
 
-            </LinearLayout>
+                />
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_below="@+id/login_cardView"
-                android:layout_centerHorizontal="true"
-                >
+        </LinearLayout>
 
 
-
-                <ImageView
-                    android:id="@+id/gmail"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/googleee"
-                    />
-
-
-                <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/fffff"
-
-
-                    />
-
-
-            </LinearLayout>
-
-        </RelativeLayout>
 
 
 
